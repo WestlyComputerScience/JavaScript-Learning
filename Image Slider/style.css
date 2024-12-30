@@ -1,0 +1,51 @@
+
+.slider
+{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider img
+{
+    width: 60%;
+    height: 600px;
+    display: none; /*Hides the images*/
+}
+
+img.displaySlide /*If an image has this class*/
+{
+    display: block;
+    animation-name: fade; /*Adds the new fade animation when displaying an image*/
+    animation-duration: 1.5s;
+}
+
+.slider button
+{
+    position: absolute; /*Positioned based on an absolute point on the page, relative to parent element (aka our slider image element)*/
+    top: 50%; /*Positioned in the middle of parent element*/
+    transform: translateY(-50%); /*Moving it up 50% of the button height to put it in the middle*/
+    font-size: 2rem;
+    background-color: hsla(0, 0%, 0%, 0.5); /*Gives it that glassy look*/
+    padding: 10px 15px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.prev
+{
+    left: 0; /*relative to right side*/
+}
+
+.next
+{
+    right: 500px;
+}
+
+@keyframes fade
+{
+    from {opacity: .5} /*Moves from 50% opacity to 100% when showing the next image*/
+    to {opacity: 1}
+}
