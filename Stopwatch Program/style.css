@@ -1,0 +1,79 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(0, 0%, 90%);
+}
+
+#myH1
+{
+    font-size: 4rem;
+    font-family: "Arial", sans-serif;
+    color: hsl(0, 0%, 25%);
+}
+
+#container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid;
+    border-radius: 50px;
+    padding: 30px;
+    background-color: white;
+}
+
+#display
+{
+    font-size: 5rem;
+    font-family: monospace;
+    font-weight: bold;
+    color: hsl(0, 0%, 30%);
+    text-shadow: 2px 2px 2px hsl(0, 0%, 0%, 0.75);
+    margin-bottom: 25px;
+}
+
+#controls button /*After selecting the controls class, use the buttons in the controls class*/
+{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 5px;
+    min-width: 125px;
+    border: none; /*Gets rid of lines*/
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.5s ease; /*Slow transition when hovering over buttons*/
+}
+
+#startButton
+{
+    background-color: hsl(120, 96%, 39%);
+}
+
+#startButton:hover
+{
+    background-color: hsl(120, 96%, 27%);
+}
+
+#stopButton
+{
+    background-color: hsl(0, 93%, 45%);
+}
+
+#stopButton:hover
+{
+    background-color: hsl(0, 93%, 33%);
+}
+
+#resetButton
+{
+    background-color: hsl(240, 91%, 63%);
+}
+
+#resetButton:hover
+{
+    background-color:  hsl(240, 91%, 51%);
+}
