@@ -1,0 +1,30 @@
+
+body
+{
+    background-image: url(ImagesBeingUsed/backgroundImage.gif);
+    background-position: center;
+    background-repeat: no-repeat; /*Stops repeating of image*/
+    background-size: cover; /*Makes it cover the entire window*/
+    background-attachment: fixed;
+    margin: 0;
+}
+
+#clock-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    height: 100vh;
+}
+
+#clock
+{
+    font-family: monospace;
+    font-size: 6.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    backdrop-filter: blur(5px); /*Blurs so you can see the clock better*/
+    background-color: hsl(0, 0%, 100%, 0.1); /*Makes the background look like foggy glass (last value is alpha(lightness))*/
+}
